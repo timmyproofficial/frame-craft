@@ -20,6 +20,7 @@ html {
 }
 
 body {
+  background: var(--color-white);
   color: var(--color-body);
   font-family: 'Mulish', sans-serif;
   font-optical-sizing: auto;
@@ -80,6 +81,35 @@ p {
 
 @media screen and (min-width: 1024px) {
   .btn {
+    font-size: 1.6rem;
+  }
+}
+
+/* Features */
+.feature {
+  background: var(--color-accent);
+  display: flex;
+  flex-direction: column;
+  max-width: 395px;
+  /* box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1); */
+  border-radius: 1rem;
+  margin: 4rem;
+  overflow: hidden;
+}
+
+.feature img {
+  width: 100%;
+}
+
+.feature__body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2.2rem 3.2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .feature__body > p {
     font-size: 1.6rem;
   }
 }
