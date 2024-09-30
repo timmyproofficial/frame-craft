@@ -158,3 +158,49 @@ p {
 .step__body {
   font-size: 1.6rem;
 }
+
+/* Plans */
+.plan {
+  background: var(--color-accent);
+  border-radius: 1rem;
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.2);
+  padding: 4rem 6.3rem;
+  max-width: 381px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  text-align: center;
+}
+
+.plan h3 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.plan > h3 {
+  color: var(--color-primary);
+}
+
+.plan__pricing {
+  display: flex;
+  gap: 1rem;
+}
+
+.plan__pricing p {
+  color: var(--color-secondary);
+  font-size: 1.6rem;
+}
+
+.plan__duration h3 {
+  align-self: flex-start;
+  text-align: left;
+}
+
+.plan__list {
+  list-style: none;
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
