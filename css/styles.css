@@ -87,6 +87,33 @@ p {
   padding: 1.2rem 2.4rem;
 }
 
+/* Input Group */
+.input-group {
+  border-radius: var(--border-radius);
+  display: flex;
+  overflow: hidden;
+}
+
+.input-group > input {
+  border: none;
+  font-size: 1.6rem;
+  font-family: inherit;
+  font-weight: 300;
+  flex-grow: 1;
+  padding: 2rem;
+  outline: none;
+  opacity: 50%;
+}
+
+.input-group__icon {
+  background: var(--color-secondary);
+  cursor: pointer;
+  padding: 0.8rem 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media screen and (min-width: 1024px) {
   .btn {
     font-size: 1.6rem;
@@ -253,5 +280,77 @@ p {
 
   .testimonial__author {
     font-size: 2rem;
+  }
+}
+
+/* Navigation */
+.nav {
+  background: orange;
+  padding: 1.6rem;
+}
+
+.nav__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__brand {
+  width: 155px;
+}
+
+.nav__brand > img {
+  width: 100%;
+}
+
+.nav__menu {
+  list-style: none;
+  display: flex;
+  gap: 4.8rem;
+}
+
+.nav__link:link,
+.nav__link:visited {
+  color: var(--color-body);
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+
+.nav__link:active,
+.nav__link:hover {
+  text-decoration: underline;
+}
+
+.nav__link-active:link,
+.nav__link-active:visited {
+  color: var(--color-primary);
+}
+
+.nav__link-active:active,
+.nav__link-active:hover {
+  text-decoration: underline;
+}
+
+.nav__btn {
+  text-decoration: none;
+}
+
+.nav__menu,
+.nav__btn {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .nav {
+    padding: 1.6rem 11.7rem;
+  }
+
+  .nav__menu,
+  .nav__btn {
+    display: flex;
+  }
+
+  .nav__hamburger {
+    display: none;
   }
 }
