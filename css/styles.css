@@ -1,5 +1,6 @@
 :root {
   --color-primary: #b20021;
+  --color-secondary: #2f4858;
   --color-white: #ffffff;
   --color-accent: #f4f4f4;
   --color-body: #181818;
@@ -93,7 +94,6 @@ p {
   max-width: 395px;
   /* box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1); */
   border-radius: 1rem;
-  margin: 4rem;
   overflow: hidden;
 }
 
@@ -112,4 +112,49 @@ p {
   .feature__body > p {
     font-size: 1.6rem;
   }
+}
+
+/* Steps */
+.step {
+  background: #fff;
+  box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  max-width: 382px;
+  padding: 2rem 1.7rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.step__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.step__icon-container {
+  background: #b2002133;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+}
+
+.step__icon-container > img {
+  width: 30px;
+}
+
+.step__heading {
+  color: var(--color-secondary);
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.step__body {
+  font-size: 1.6rem;
 }
