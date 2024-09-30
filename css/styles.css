@@ -70,6 +70,12 @@ p {
   }
 }
 
+/* Container */
+.container {
+  max-width: 1207px;
+  margin: 0 auto;
+}
+
 /* Button */
 .btn {
   background: var(--color-primary);
@@ -238,4 +244,14 @@ p {
 .testimonial__author {
   color: var(--color-primary);
   font-weight: 500;
+}
+
+@media screen and (min-width: 1024px) {
+  .testimonial__body p {
+    font-size: 1.6rem;
+  }
+
+  .testimonial__author {
+    font-size: 2rem;
+  }
 }
