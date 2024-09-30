@@ -1,0 +1,67 @@
+:root {
+  --color-primary: #b20021;
+  --color-accent: #f4f4f4;
+  --color-body: #181818;
+}
+
+/* UNIVERSAL SELECTOR */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* TYPOGRAPHY */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: var(--color-body);
+  font-family: 'Mulish', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 1.8rem;
+  font-style: normal;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 3.2rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 2.4rem;
+  }
+
+  h1 {
+    font-size: 4.5rem;
+  }
+
+  h2 {
+    font-size: 3.2rem;
+  }
+
+  h3 {
+    font-size: 2.4rem;
+  }
+
+  p {
+    font-size: 2rem;
+  }
+}
