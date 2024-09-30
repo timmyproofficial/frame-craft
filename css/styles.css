@@ -1,5 +1,6 @@
 :root {
   --color-primary: #b20021;
+  --color-white: #ffffff;
   --color-accent: #f4f4f4;
   --color-body: #181818;
 }
@@ -63,5 +64,22 @@ p {
 
   p {
     font-size: 2rem;
+  }
+}
+
+/* Button */
+.btn {
+  background: var(--color-primary);
+  border: none;
+  border-radius: 1rem;
+  color: var(--color-white);
+  font-size: 1.4rem;
+  font-family: inherit;
+  padding: 1.2rem 2.4rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .btn {
+    font-size: 1.6rem;
   }
 }
