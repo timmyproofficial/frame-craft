@@ -246,7 +246,7 @@ p {
 /* Testimonial */
 .testimonial {
   background: var(--color-white);
-  box-shadow: 0 0 3px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.2);
   border-radius: var(--border-radius);
   display: flex;
   gap: 1.6rem;
@@ -451,4 +451,9 @@ p {
 .block-plans .grid {
   gap: 3rem;
   align-items: start;
+}
+
+/* Testimonial Block */
+.block-testimonials .grid {
+  gap: 3rem;
 }
