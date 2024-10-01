@@ -367,3 +367,40 @@ p {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+/* Blocks */
+.block--white {
+  background: var(--color-white);
+}
+
+.block--gray {
+  background: var(--color-accent);
+}
+
+.block__header {
+  text-align: center;
+  max-width: 991px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.block__heading {
+  color: var(--color-primary);
+  font-size: 2.4rem;
+}
+
+.block__paragraph {
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .block__heading {
+    font-size: 3.2rem;
+  }
+
+  .block__paragraph {
+    font-size: 2rem;
+  }
+}
