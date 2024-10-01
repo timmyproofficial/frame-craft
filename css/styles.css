@@ -436,3 +436,13 @@ p {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+/* Steps Block */
+.block-steps .grid {
+  gap: 3rem;
+}
+
+.block-steps .btn {
+  align-self: center;
+  text-decoration: none;
+}
