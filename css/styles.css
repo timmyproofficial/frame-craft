@@ -141,6 +141,11 @@ p {
 
 .feature img {
   width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.feature img:hover {
+  transform: scale(1.03);
 }
 
 .feature__body {
@@ -515,6 +520,10 @@ p {
 }
 
 /* Footer */
+.footer {
+  padding: 4rem 1.8rem;
+}
+
 .footer .grid {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 218px 1fr;
