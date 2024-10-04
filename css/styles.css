@@ -434,7 +434,6 @@ p {
 .hero__text {
   font-size: 1.6rem;
   font-weight: 400;
-  box-shadow: 0px 4px 4px 0px #00000040;
   animation-duration: 3s;
   animation-name: slidein;
 }
