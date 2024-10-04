@@ -380,11 +380,6 @@ p {
   padding: 0 1.2rem;
 }
 
-.hero .btn {
-  text-decoration: none;
-  align-self: center;
-}
-
 .hero__banner {
   max-width: 1013px;
   margin: 0 auto;
@@ -394,16 +389,66 @@ p {
   gap: 3.2rem;
 }
 
+.hero__banner .btn {
+  text-decoration: none;
+  align-self: center;
+  opacity: 0;
+  animation: fade-in 0.7s ease-in forwards;
+  animation-delay: 2.8s;
+}
+
+/* Animation keyframes */
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    display: none;
+  }
+
+  100% {
+    opacity: 1;
+    display: block;
+  }
+}
+
 .hero__heading {
   font-size: 3.2rem;
   font-weight: 800;
   line-height: 1.2;
+  animation-duration: 3s;
+  animation-name: slidedown;
+}
+
+@keyframes slidedown {
+  from {
+    translate: 0 -150vh;
+    scale: 200% 1;
+  }
+
+  to {
+    translate: 0 0;
+    scale: 100% 1;
+  }
 }
 
 .hero__text {
   font-size: 1.6rem;
   font-weight: 400;
   box-shadow: 0px 4px 4px 0px #00000040;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    translate: 150vw 0;
+    scale: 200% 1;
+  }
+
+  to {
+    translate: 0 0;
+    scale: 100% 1;
+  }
 }
 
 @media screen and (min-width: 1024px) {
